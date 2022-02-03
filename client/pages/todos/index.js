@@ -74,8 +74,6 @@ const Todos = ({BASE_URL}) => {
 
 
 
-
-
     return ( 
         <Container>
             <Grid container spacing={4}>
@@ -94,10 +92,11 @@ const Todos = ({BASE_URL}) => {
                         inputProps={{ style: { color: "#3b3d3c" } }}
                         />
                     </form>
+                    <p>Toggle todo to mark as completed.</p>
                 </Grid>
             </Grid>
             {
-                todos.map((todo) => {
+             todos.length > 0  ?  todos.map((todo) => {
                     return (
                         <TodoItem 
                             key={todo._id} 
@@ -106,7 +105,7 @@ const Todos = ({BASE_URL}) => {
                             toggleCompleted={toggleCompleted}
                         />
                     )
-                })
+                }) : (<h2>No todos to show.</h2>)
             }
         </Container>
      );

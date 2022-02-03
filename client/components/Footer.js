@@ -3,7 +3,7 @@ const Footer = () => {
     return ( 
         <Container>
             <footer>
-                 <h1>Bart Tabusao :)</h1>
+                 <h4>Copyright 2022 Bart Tabusao</h4> 
             </footer>
         </Container>
      );

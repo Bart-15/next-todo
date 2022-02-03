@@ -24,6 +24,7 @@ nav {
 nav .nav-logo a {
   margin-left: 12px;
   font-size:30px;
+  cursor:pointer;
 }
 nav .nav-logo {
   margin-right: auto;

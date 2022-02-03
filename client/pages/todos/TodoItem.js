@@ -7,9 +7,11 @@ import styles from '../../styles/TodoItem.module.css'
 
 
 
+
+
 const TodoItem = ({todo, deleteTodo, toggleCompleted}) => {
     return ( 
-        <div className={styles.todoContainer}>
+        <div className={styles.todoContainer} >
           <Head>
             <title>Bart - Todos</title>
           </Head>
